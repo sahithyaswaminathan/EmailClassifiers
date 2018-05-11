@@ -1,3 +1,11 @@
+%% Description
+% This script completes the following task
+%
+% 1.The train and test accuracy are calculated for Z-normalized data
+% 
+% 
+% =========================================================================
+
 clc;
 
 clear all;
