@@ -1,7 +1,15 @@
+%% Description
+% This script completes the following tasks
+%
+% 1.The train and test accuracy are calculated for hyperparameters value from 1 to 100 increamented in 0.5 steps
+% 2.Plot train and test error rates Vs alpha
+% 
+% =========================================================================
+
 clc;
 clear all;
 
-%%Binarization of Train and Test data
+%% Binarization of Train and Test data
 
 load spamData.mat;
 
@@ -14,9 +22,7 @@ for i = 1:3065
     else
         Xtrain_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 Xtest_s = Xtest;
@@ -28,9 +34,7 @@ for i = 1:1536
     else
         Xtest_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 %%Naive Bayes Beta - bernoulli for the alpha values = 1 to 100
@@ -57,7 +61,7 @@ N1 = n1(any(n1,2),:); %Deleting all the rows with the value zero%
 
 Nj1 = sum(N1);
 
-%Creating a matrix which stores value only when ytrain == 0 'not - spam'%
+% Creating a matrix which stores value only when ytrain == 0 'not - spam'%
 for i = 1:N
     c = yi(i,1);
     if c == 0 
@@ -73,7 +77,7 @@ N0 = n0(any(n0,2),:); %Deleting all the rows with the value zero%
 
 Nj0 = sum(N0);
 
-%%Calculating the class prior
+%% Calculating the class prior
 
 pijc_1 = length(N1)/N; %prior maximum likelihood for the spam emails%
 pijc_0 = length(N0)/N; %prior maximum likelihood for the non-spam email%
