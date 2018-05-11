@@ -14,9 +14,7 @@ for i = 1:3065
     else
         Xtrain_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 Xtest_s = Xtest;
@@ -28,9 +26,7 @@ for i = 1:1536
     else
         Xtest_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 %%Naive Bayes Beta-Bernoulli for alpha = 0
