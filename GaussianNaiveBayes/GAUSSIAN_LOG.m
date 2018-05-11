@@ -1,3 +1,11 @@
+%% Description
+% This script completes the following tasks
+%
+% 1.The train and test accuracy are calculated for Log normalized data set
+%
+% 
+% =========================================================================
+
 clc;
 
 clear all;
