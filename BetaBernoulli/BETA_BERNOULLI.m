@@ -1,3 +1,11 @@
+%% Description
+% This script completes the following tasks
+%
+% 1.The train and test accuracy are calculated for hyperparameters value from 1 to 100 increamented in 0.5 steps
+% 2.Plot train and test error rates Vs alpha
+% 
+% =========================================================================
+
 clc;
 clear all;
 
@@ -14,9 +22,7 @@ for i = 1:3065
     else
         Xtrain_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 Xtest_s = Xtest;
@@ -28,9 +34,7 @@ for i = 1:1536
     else
         Xtest_s(i,j) = 0;
     end
-    j=j+1;
     end
-    i = i+1;
 end
 
 %%Naive Bayes Beta - bernoulli for the alpha values = 1 to 100
