@@ -1,3 +1,10 @@
+%% Description
+%
+% The goal is to perform following task
+% 1. The train and test accuracy are calculated based on different values of K
+% 2. To plot train and test accuracy rates Vs K values 
+% ============================================================
+
 clc;
 clear all;
 
