@@ -1,3 +1,10 @@
+%% Description
+%
+% The goal is to perform following task
+% 1. The train and test accuracy are calculated based on the Newton's method with regularization parameter
+% 2. To plot train and test accuracy rates Vs regularization parameter 
+% ============================================================
+
 %%Loading the initial data
 
 clc;
